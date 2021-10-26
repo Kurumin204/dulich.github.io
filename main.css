@@ -1,0 +1,236 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -----------------------------------------------*/
+
+body
+{
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+.container{
+    width: 985px;
+    margin:  0 auto;
+}
+.header{
+    width:100%;
+    height:110px;
+    background: rgb(255 196 0 / 68%);
+    display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+}
+.header img{
+    width: 170px;
+    height: 110px;
+    bottom: 10px;
+    
+}
+.header .tieude{
+    text-align: center;
+    color: red;
+    padding: 28px 0px;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav
+{
+    width: 100%px;
+    height: 40px;
+    background: #23237f;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav ul
+{
+    list-style: none;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.nav ul li
+{
+    float: left;
+}
+.nav ul li a
+{
+    display: block;
+    line-height: 38px;
+    color: aliceblue;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 170px;
+    height: 40px;
+}
+.nav ul li a:hover
+{
+    background-color: #17094b;
+}
+.nav .search
+{
+    line-height: 40px;
+    float:right;
+    margin: right 25px;
+}
+.nav .search button
+{
+    margin-right: 8px;
+}
+
+
+article ul{
+    list-style: none;
+}
+article ul li{
+    float: left;
+    padding: 0 10px;
+    color: saddlebrown;
+}
+article .tieude{
+    text-align: center;
+    color: red;
+    padding: 15px 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+article .Loimodau{
+    text-align: center;
+    color: green;
+    padding: 15px 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: #dace9d;
+    border-radius: 10px 10px 0px 0px;
+}
+article .Gioithieu{
+    text-align: justify;
+    color: black;
+    font-size: 20px;
+    padding: 16px 32px;
+    line-height: 1.2;
+}
+article .Gioithieu p{
+    margin-bottom: 12px;
+}
+#slideshow 
+{
+    overflow: hidden;
+    height: 426px;
+    width: 100%;
+    margin: 0 auto;
+}
+  
+.slide-wrapper {
+width: 2955px;
+-webkit-animation: slide 14s ease infinite;
+}
+
+.slide 
+{
+    float: left;
+    height: 510px;
+    width: 985px;
+}
+
+.slide img
+{
+    height: 463px;
+    width: 985px;
+    object-fit: fill;
+}
+  
+@-webkit-keyframes slide {
+0% {margin-left: 0px;}
+20% {margin-left: 0px;}
+40% {margin-left: -985px;}
+60% {margin-left: -985px;}
+80% {margin-left: -1970px;}
+100% {margin-left: -1970px;}
+}
+
+.map {
+    width: 290px;
+    height: 350px;
+    padding-left: 324px;
+}
+.all1{
+    background-color: #7ec45f;
+    display: flex;
+    flex-direction: column;
+}
+.khung
+{
+    background-color: #f6f5e1d6;
+    margin: 16px 38px;
+    box-shadow: #b689343a 0px 10px 30px 0px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: block;
+}
+.dacdiem {
+    margin-left: 120px;
+}
+.diadiem {
+		height: 350px;
+		width: 500px;
+		padding-left: 190px;
+}
+
+.lienhe {
+	 display: flex;
+    justify-content: space-between;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+    padding-right: 40px;
+}
